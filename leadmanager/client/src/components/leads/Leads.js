@@ -11,6 +11,7 @@ import {
     getLeads,
     deleteLead
 } from '../../redux/actions/leads';
+import AddLead from './AddLead';
 
 class Leads extends Component{
     static propTypes = {
@@ -27,6 +28,7 @@ class Leads extends Component{
         }
         return (
             <div>
+                <AddLead />
                 <h1>Leads List</h1>
                 <Table striped bordered hover>
                     <thead>
